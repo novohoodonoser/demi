@@ -1,0 +1,39 @@
+.how {
+  margin-top: 125px;
+  min-height: 432px;
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__upper {
+    color: #181717;
+    font-family: "Avenir", serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__picture_container {
+    position: relative;
+    bottom: 0;
+  }
+
+  &__background {
+    position: absolute;
+    bottom: 0;
+    left: 77px;
+    margin-top: 136px;
+    width: 395px;
+    height: 235px;
+    border-radius: 5px;
+    background-color: $main-color;
+    //width: 100%-77px;
+  }
+
+  &__girl {
+    position: absolute;
+    bottom: 0;
+  }
+}

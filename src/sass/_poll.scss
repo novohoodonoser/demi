@@ -1,0 +1,35 @@
+.poll {
+  margin-top: 125px;
+  min-height: 570px;
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  &__picture_container {
+    margin-top: 152px;
+    position: absolute;
+    bottom: 0;
+    right:0;
+  }
+
+  &__poll_item {
+    width: 73px;
+    height: 197px;
+    background-color: $second-color;
+    position: absolute;
+    bottom: 0;
+  }
+
+
+  &__upper {
+    margin-top: 52px;
+    color: #181717;
+    font-family: "Avenir", serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}

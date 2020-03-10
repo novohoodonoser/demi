@@ -1,0 +1,13 @@
+.savings {
+  margin-top: 96px;
+  min-height: 432px;
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__text {
+    margin-top: 42px;
+  }
+}

@@ -1,0 +1,26 @@
+.duration {
+  margin-top: 48px;
+  min-height: 300px;
+  border-radius: 5px;
+
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__footer {
+    margin-top: 45px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__picture_container {
+    margin-top: 49px;
+  }
+
+  &__container {
+    border-radius: 5px;
+    width: 62%;
+    margin: auto;
+  }
+}

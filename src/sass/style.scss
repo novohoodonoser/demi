@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Merriweather', serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot');
+  src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff') format('woff'),
+  url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Phone';
+  src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot');
+  src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff') format('woff'),
+  url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "variables";
+@import "general";
+@import "header";
+@import "intro";
+@import "savings";
+@import "how_it_works";
+@import "poll";
+@import "percentage";
+@import "duration";
+

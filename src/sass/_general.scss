@@ -1,0 +1,47 @@
+.color_main {
+  background-color: $main-color;
+}
+
+.color_poll {
+  background-color: $percentage-background-color;
+}
+
+.container {
+  width: 62%;
+}
+
+.menu_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.description {
+  margin-top: 41px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.description_subheader {
+  margin-top: 20px;
+  font-family: "Avenir", serif;
+  font-size: 15px;
+}
+
+.more {
+  margin-top: 14px;
+  font-family: "Avenir Phone", serif;
+  font-weight: 700;
+  color: #181717;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 45px;
+  margin-top: 41px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
