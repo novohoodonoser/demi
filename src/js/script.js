@@ -1,3 +1,4 @@
+/*
 const howItWorksLink = document.getElementById('howItWorks');
 const offersLink = document.getElementById('offersLink');
 const successStoriesLink = document.getElementById('successStoriesLink');
@@ -26,3 +27,20 @@ const showSuccessStories = function () {
 howItWorksLink.addEventListener('click',howItWorks);
 offersLink.addEventListener('click',showOffers);
 successStoriesLink.addEventListener('click',showSuccessStories);
+*/
+
+var slider = tns({
+    container: '.pride__container',
+    items: 2,
+    slideBy: 'page',
+    autoplay: false,
+    controls: false,
+    nav: false
+});
+
+document.querySelector('.prev').addEventListener('click',function () {
+    slider.goTo('prev');
+});
+document.querySelector('.next').addEventListener('click',function () {
+    slider.goTo('next');
+});

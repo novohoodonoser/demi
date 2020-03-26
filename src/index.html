@@ -10,9 +10,6 @@
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
             crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap&subset=cyrillic"
-          rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css"/>
     <script
             src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -31,10 +28,15 @@
             crossorigin="anonymous"
             defer
     ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer></script>
     <script
             src="js/script.js"
             defer
     ></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap&subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css"/>
 </head>
 <body>
 <div class="color_main">
@@ -273,6 +275,60 @@
     </div>
 </section>
 <div class="container">
+    <section class="pride">
+        <div class="upper">Наша гордость</div>
+        <div class="description mt11">Познакомьтесь с нашими объектами</div>
+        <div class="con mt41">
+            <div class="pride__container">
+                <div class="pride__item">
+                    <img src="./img/redAndWhite.webp" alt="slide">
+                    <div class="pride__title">Магазин «Красное и Белое»</div>
+                    <div class="pride__address">Москва, ул. Красная, 78</div>
+                    <div class="pride__percent">18.6%</div>
+                    <div class="pride__percent_sub_description">Доходность</div>
+                    <div class="pride__description">Прекрасный супермаркет в центре столицы, который принимает до 500
+                        тысяч
+                        посетителей в день – невероятно удачное расположение!
+                    </div>
+                    <div class="more mt26"><a href="#" class="how__more_link">Подробнее о безопасности ≥</a>
+                    </div>
+                </div>
+                <div class="pride__item">
+                    <img src="./img/funnyPrices.webp" alt="slide">
+                    <div class="pride__title">Магазин «Смешные цены»</div>
+                    <div class="pride__address">Москва, ул. Белая, 87</div>
+                    <div class="pride__percent">20.2%</div>
+                    <div class="pride__percent_sub_description">Доходность</div>
+                    <div class="pride__description">Прекрасный супермаркет в центре столицы, который принимает до 500
+                        тысяч посетителей в день – невероятно удачное расположение!
+                    </div>
+                    <div class="more mt26"><a href="#" class="how__more_link">Подробнее о безопасности ≥</a>
+                    </div>
+                </div>
+                <div class="pride__item">
+                    <div class="pride__item_container">
+                        <img src="./img/pyatero4ka.webp" alt="slide">
+                        <div class="pride__title">Магазин «Пятерочка»</div>
+                        <div class="pride__address">Москва, ул. Синяя, 6</div>
+                        <div class="pride__percent">15.1%</div>
+                        <div class="pride__percent_sub_description">Доходность</div>
+                        <div class="pride__description">Прекрасный супермаркет в центре столицы, который принимает до
+                            500
+                            тысяч посетителей в день – невероятно удачное расположение!
+                        </div>
+                        <div class="more mt26"><a href="#" class="how__more_link">Подробнее о безопасности ≥</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="prev"><img src="./icons/arrow_left.svg"></button>
+            <button type="button" class="next"><img src="./icons/arrow_right.svg"></button>
+        </div>
+        <button class="intro__send_request mt74 center">Получить консультацию</button>
+        <div class="line"></div>
+    </section>
+</div>
+<div class="container">
     <section class="why">
         <div class="why__container">
             <div class="why__text col-md-5">
@@ -290,11 +346,13 @@
             </div>
             <div class="why__picture_container col-md-6  offset-md-1">
                 <div class="why__chelik"><img src="./img/chelik.webp" alt=""></div>
-                <div class="description_subheader">
+                <div class="why__boarder">
+                <div class="description_subheader rt">
                     Есть вопросы?
                     Мы с радостью вас проконсультируем!
                 </div>
-                <button class="intro__send_request">Получить консультацию</button>
+                <button class="intro__send_request mt31 rt">Получить консультацию</button>
+                </div>
             </div>
         </div>
     </section>
@@ -302,10 +360,10 @@
         <div class="bullets__container">
             <div class="bullets__item col-md-4">
                 <div class="bullets__item_pic"><img src="./img/experts.webp" alt=""></div>
-                <div class="description">
+                <div class="description mt18">
                     Опытные специалисты
                 </div>
-                <div class="description_subheader">
+                <div class="description_subheader mt9">
                     Работаем в области управления коммерческой недвижимостью
                     более 10 лет, имеем большой опыт
                     и знаем все до мелочей
@@ -313,10 +371,10 @@
             </div>
             <div class="bullets__item col-md-4">
                 <div class="bullets__item_pic"><img src="./img/face2face.webp" alt=""></div>
-                <div class="description">
+                <div class="description mt18">
                     Индивидуальный подход
                 </div>
-                <div class="description_subheader">
+                <div class="description_subheader mt9">
                     Разрабатываем индивидуальные
                     схемы вложения денежных средств
                     в недвижимость учитывая возможности
@@ -325,56 +383,57 @@
             </div>
             <div class="bullets__item col-md-4">
                 <div class="bullets__item_pic"><img src="./img/puzzle.webp" alt=""></div>
-                <div class="description">
+                <div class="description mt18">
                     Инвестирование под ключ
                 </div>
-                <div class="description_subheader">
+                <div class="description_subheader mt9">
                     Берем на себя все организационные вопросы, чтобы вы могли получать прибыль без отрыва от своей
                     работы и бизнеса
                 </div>
             </div>
         </div>
+        <div class="line mt110"></div>
     </section>
 </div>
 <div class="container">
     <section class="function">
-        <div class="description">
+        <div class="description mt110">
             Индивидуальный подход
         </div>
         <div class="function__container">
 
             <div class="function__item col-md-4">
-                <div class="function__item_number">1</div>
-                <div class="description_subheader">
+                <div class="function__item_number mt120">1</div>
+                <div class="description_subheader mt93">
                     Поиск объекта и оценка
                     его инвестиционной привлекательности
                 </div>
-                <div class="function__item_number">4</div>
-                <div class="description_subheader">
+                <div class="function__item_number mt120">4</div>
+                <div class="description_subheader mt93">
                     Решение эксплуатационных вопросов с администрацией города, коммунальными службами и т.д.
                 </div>
             </div>
             <div class="function__item col-md-4">
-                <div class="function__item_number">2</div>
-                <div class="description_subheader">
+                <div class="function__item_number  mt120">2</div>
+                <div class="description_subheader mt93">
                     Ведение коммуникаций
                     с продавцом объекта
                     от лица соинвесторов
                 </div>
                 <div class="function__item_number">5</div>
-                <div class="description_subheader">
+                <div class="description_subheader mt93">
                     Проверка юридических
                     и прочих рисков
                 </div>
             </div>
             <div class="function__item col-md-4">
-                <div class="function__item_number">3</div>
-                <div class="description_subheader">
+                <div class="function__item_number mt120">3</div>
+                <div class="description_subheader mt93">
                     Ведение операций
                     с арендаторами от лица владельцев объекта
                 </div>
-                <div class="function__item_number">6</div>
-                <div class="description_subheader">
+                <div class="function__item_number mt120">6</div>
+                <div class="description_subheader mt93">
                     Полное ведение бухгалтерского учета
                 </div>
             </div>
@@ -431,6 +490,5 @@
 
     </div>
 </div>
-
 </body>
 </html>
