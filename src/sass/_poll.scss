@@ -1,35 +1,104 @@
 .poll {
-  margin-top: 125px;
-  min-height: 570px;
+  background-color: #f8f8f8;
+  @media(min-width: 768px) {
+    margin-top: 50px;
+  }
 
-  &__container {
+  &_inner {
     display: flex;
-    justify-content: flex-start;
-    position: relative;
+    @media(min-width: 320px) {
+      flex-flow: column;
+    }
+
+    @media(min-width: 768px) {
+      flex-flow: row;
+    }
+  }
+
+  &__upper {
+    padding-top: 33px;
+    @media(min-width: 768px) {
+      padding-top: 50px;
+    }
+  }
+
+  &__slogan {
+    margin-top: 6px;
+  }
+
+  &__appendix {
+    margin-top: 26px;
+    color: #181717;
+    font-family: "Avenir Bold", serif;
+    font-size: 13px;
+    line-height: 20px;
+
+    @media(min-width: 768px) {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      flex: 3;
+    }
+
   }
 
   &__picture_container {
-    margin-top: 152px;
-    position: absolute;
-    bottom: 0;
-    right:0;
+    display: flex;
+    justify-content: space-between;
+    min-height: 233px;
+    align-items: flex-end;
+    @media(min-width: 768px) {
+      flex: 3;
+    }
+
+    &_item_percent {
+      color: $second-color;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &_item_poll_1 {
+      height: 108px;
+      @media(min-width: 768px) {
+        height: 131px;
+      }
+
+    }
+
+    &_item_poll_2 {
+      height: 131px;
+      @media(min-width: 768px) {
+        height: 159px;
+      }
+    }
+
+    &_item_poll_3 {
+      height: 154px;
+      @media(min-width: 768px) {
+        height: 187px;
+      }
+    }
+
+    &_item_poll_4 {
+      height: 177px;
+      @media(min-width: 768px) {
+        height: 215px;
+      }
+    }
+
+    &_item_poll_5 {
+      height: 204px;
+      @media(min-width: 768px) {
+        height: 247px;
+      }
+    }
   }
+}
 
-  &__poll_item {
-    width: 73px;
-    height: 197px;
-    background-color: $second-color;
-    position: absolute;
-    bottom: 0;
-  }
-
-
-  &__upper {
-    margin-top: 52px;
-    color: #181717;
-    font-family: "Avenir", serif;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+[class^="poll__picture_container_item_poll_"] {
+  background-color: $second-color;
+  width: 40px;
+  @media(min-width: 768px) {
+    width: 49px;
   }
 }

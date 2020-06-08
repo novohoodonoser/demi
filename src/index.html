@@ -1,494 +1,696 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <title>DEMI</title>
-    <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-            crossorigin="anonymous"
-    />
     <script
-            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            defer
+    ></script>
+    <script
+            src="https://code.jquery.com/jquery-migrate-3.3.0.min.js"
             defer
     ></script>
     <script
             src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
             defer
     ></script>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
     <script
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"
             defer
     ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer></script>
+
+    <script src="js/jquery.validate.min.js" defer></script>
+    <script src="js/jquery.maskedinput.min.js" defer></script>
+    <script src="js/wow.min.js" defer></script>
+
     <script
             src="js/script.js"
             defer
     ></script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap&subset=cyrillic"
           rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="./css/style.min.css"/>
 </head>
 <body>
-<div class="color_main">
-    <div class="container">
-        <header class="header">
-            <div class="menu_container">
-                <a href="#" class="header__logo  col-md-3">
-                    <div class="logo__text">
-                        ICS business
-                    </div>
-                    <div class="logo__description">
-                        International consulting services in business
-                    </div>
-                </a>
-                <nav class="col-md-6">
-                    <ul class="header__menu">
-                        <li class="menu_item"><a href="#" class="menu_link">О компании</a></li>
-                        <li class="menu_item"><a href="#require" class="menu_link">Клиента</a></li>
-                        <li class="menu_item"><a href="#require" class="menu_link">Наши объекты</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="header__contacts col-md-2  offset-md-1">
-                    <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
+<section id="up" class="help">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="up" class="logo__link">
+                        <img src="./icons/logo.svg" alt="logo">
+                    </a>
                 </div>
-            </div>
-        </header>
+                <div class="menu">
+                    <button class="menu__btn"></button>
+                </div>
 
-        <section class="intro">
-            <div class="intro__container">
-                <div class="intro__text col-md-5">
-                    <div class="description">
-                        <h1>Помогаем людям зарабатывать на недвижимости</h1>
-                    </div>
-                    <div class="description_subheader">
-                        Обеспечиваем возможности приумножения капитала за счет инвестирования в недвижимость
-                    </div>
-                    <button class="intro__send_request">Подать заявку</button>
-                </div>
-                <div class="intro__office col-md-6  offset-md-1">
-                    <img src="./img/intro.png" alt="">
-                </div>
-            </div>
-        </section>
-    </div>
-</div>
-<div class="container">
-    <section class="savings">
-        <div class="savings__container">
-            <div class="savings__text col-md-5">
-                <div class="description">
-                    У вас есть накопления? Мы знаем как их преумножить!
-                </div>
-                <div class="description_subheader">
-                    Оценим эффективность вложений, проконсультируем, ответим на все вопросы и выполним комплексную
-                    работу под ключ.
-                    <br><br>
-                    Минимизируем правовые и экономические риски при выборе, приобретении, управлении и дальнейшей
-                    перепродаже недвижимости.
-                </div>
-            </div>
-            <div class="savings__warhouse col-md-6 offset-md-1">
-                <img src="./img/warhouse.png" alt="">
+                <ul class="menu__list">
+                    <li class="menu_item"><a href="#" class="menu_link">О компании</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Клиентам</a></li>
+                    <li class="menu_item"><a href="pride" class="menu_link">Наши объекты</a></li>
+                    <li class="menu_item"><a href="footer" class="menu_link">Контакты</a></li>
+                </ul>
+                <div class="phone">+7 (926) 831-72-09</div>
             </div>
         </div>
-    </section>
-    <section class="how">
-        <div class="how__container">
-            <div class="how__text col-md-5">
-                <div class="how__upper">
-                    как это работает?
+    </header>
+    <div class="intro_help">
+        <div class="intro__container">
+            <div class="intro__image">
+                <div class="coin1">
+                    <img src="./icons/big_coin_1.svg" alt="coin">
                 </div>
-                <div class="description">
-                    Подберем коммерческую недвижимость, которая уже генерирует доход
+                <div class="coin2">
+                    <img src="./icons/big_coin_2.svg" alt="coin">
                 </div>
-                <div class="description_subheader">
-                    Мы проводим проверку каждого объекта, проверяем правовые аспекты, анализируем потребительский поток,
-                    заполненность объекта арендаторами.
-                    <br><br>
-                    Приоритет отдается объектам, в которых уже размещены сетевые арендаторы, чьи товары рассчитаны на
-                    среднего потребителя.
+                <div class="office">
+                    <img src="./icons/big_office.svg" alt="">
                 </div>
-                <div class="more"><a href="#" class="how__more_link">Подробнее ≥</a></div>
-            </div>
-            <div class="how__picture_container col-md-6  offset-md-1">
-                <!--                <div class="how__background"></div>-->
-                <!--                <div class="how__girl"><img src="./img/girl.png" alt=""></div>-->
-                <div class="how__girl"><img src="./img/girl-with-back.png" alt=""></div>
+                <div class="coin3">
+                    <img src="./icons/big_coin_3.svg" alt="coin">
+                </div>
             </div>
         </div>
-    </section>
-</div>
-<div class="color_poll">
-    <div class="container">
-        <section class="poll">
-            <div class="poll__container">
-                <div class="poll__text col-md-6">
-                    <div class="poll__upper">
-                        Ваша выгода
-                    </div>
-                    <div class="description">
-                        Стены в нашей стране надежнее курса рубля
-                    </div>
-                    <div class="description_subheader">
-                        Вкладывая инвестиции в наш проект вы получаете стабильный пассивный доход. Этот доход не будет
-                        зависеть от пенсионного возраста и порядка расчета пенсии.
-                        <br><br>
-                        Проект предусматривает приобретения объекта недвижимости, который генерит арендный доход,
-                        соответственно вы регулярно получаете доход
-                        от сдачи объекта в аренду.
-                    </div>
-                    <div class="more">Ежегодно этот доход растет, т.к. арендная плата ежегодно может
-                        увеличиваться до 10%
-                    </div>
+        <div class="help__outer">
+            <div class="help__container">
+                <div class="help__slogan">Помогаем людям зарабатывать на&nbsp;недвижимости</div>
+                <div class="help__description">Обеспечиваем возможности приумножения капитала за счет инвестирования в
+                    недвижимость
                 </div>
-                <div class="poll__picture_container col-md-6">
-                    <img src="./img/10-layers.png" alt="">
+                <div class="help__send_request">
+                    <button data-modal="consultation" class="send_request">Подать заявку</button>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
-</div>
-<div class="container">
-    <section class="percentage">
-        <div class="percentage__container">
-            <div class="percentage__warhouse col-md-3">
-                <img src="./img/proc.png" alt="">
+</section>
+<section class="savings">
+    <div class="savings__container">
+        <div class="savings__text">
+            <div class="savings__slogan">У вас есть накопления?
+                Мы&nbsp;знаем как их преумножить!
             </div>
-            <div class="percentage__text col-md-4">
-                <div class="description">
-                    10-12%
+            <div class="savings__description">Оценим эффективность вложений, проконсультируем, ответим на все вопросы и
+                выполним комплексную работу под ключ.
+                <br><br>
+                Минимизируем правовые и экономические риски при выборе, приобретении, управлении
+                и дальнейшей перепродаже недвижимости.
+            </div>
+        </div>
+        <div class="savings__warhouse">
+            <div class="savings__inner">
+                <div class="savings__sklad_mobile">
+                    <img src="./images/sklad.png" alt="sklad">
+                    <div class="savings__stock_arrow">
+                        <img src="./icons/stock_arrow.svg" alt="stock_arrow">
+                    </div>
+                    <div class="savings__lightbulb">
+                        <img src="./icons/lightbulb.svg" alt="lightbulb">
+                    </div>
                 </div>
-                <div class="description_subheader">
-                    Составляет средняя доходность проекта,
-                    что выше банковского процента по депозиту
+                <div class="savings__sklad_tablet">
+                    <img src="./images/tablet/sklad.png" alt="sklad">
+                    <div class="savings__stock_arrow">
+                        <img src="./icons/stock_arrow.svg" alt="stock_arrow">
+                    </div>
+                    <div class="savings__lightbulb">
+                        <img src="./icons/lightbulb.svg" alt="lightbulb">
+                    </div>
                 </div>
             </div>
-            <div class="percentage__send_request col-md-4">
+        </div>
+    </div>
+</section>
+<section class="how">
+    <div class="how__container">
+        <div class="how__text">
+            <div class="how__upper">
+                как это работает?
+            </div>
+            <div class="how__slogan">
+                Подберем коммерческую недвижимость, которая уже генерирует доход
+            </div>
+            <div class="how__description">
+                Мы проводим проверку каждого объекта, проверяем правовые аспекты, анализируем потребительский
+                поток,
+                заполненность объекта арендаторами.
+                <br><br>
+                Приоритет отдается объектам, в которых уже размещены сетевые арендаторы, чьи товары рассчитаны
+                на
+                среднего потребителя.
+            </div>
+            <div class="how__more"><a href="#" class="how__more_link">Подробнее ≥</a></div>
+        </div>
+        <div class="how__picture_container">
+            <div class="how__picture_container_girl"><img src="./icons/girl.svg" alt="girl"></div>
+            <div class="how__picture_container_dots"><img src="./icons/dots.svg" alt="dots"></div>
+            <div class="how__picture_container_charts"><img src="./icons/charts.svg" alt="charts"></div>
+            <div class="how__picture_container_clock"><img src="./icons/clock.svg" alt="clock"></div>
+        </div>
+    </div>
+</section>
+<section class="poll">
+    <div class="poll__container">
+        <div class="poll__upper">
+            Ваша выгода
+        </div>
+        <div class="poll__slogan">
+            Стены в нашей стране надежнее курса рубля
+        </div>
+        <div class="poll__description">
+            Вкладывая инвестиции в наш проект вы получаете стабильный пассивный доход. Этот доход не
+            будет
+            зависеть от пенсионного возраста и порядка расчета пенсии.
+            <br><br>
+            Проект предусматривает приобретения объекта недвижимости, который генерит арендный доход,
+            соответственно вы регулярно получаете доход
+            от сдачи объекта в аренду.
+        </div>
+        <div class="poll_inner">
+            <div class="poll__appendix">Ежегодно этот доход растет, т.к. арендная плата ежегодно может
+                увеличиваться до 10%
+            </div>
+            <div class="poll__picture_container">
+                <div class="poll__picture_container_item">
+                    <div class="poll__picture_container_item_percent">+8%</div>
+                    <div class="poll__picture_container_item_poll_1"></div>
+                </div>
+                <div class="poll__picture_container_item">
+                    <div class="poll__picture_container_item_percent">+8%</div>
+                    <div class="poll__picture_container_item_poll_2"></div>
+                </div>
+                <div class="poll__picture_container_item">
+                    <div class="poll__picture_container_item_percent">+10%</div>
+                    <div class="poll__picture_container_item_poll_3"></div>
+                </div>
+                <div class="poll__picture_container_item">
+                    <div class="poll__picture_container_item_percent">+9%</div>
+                    <div class="poll__picture_container_item_poll_4"></div>
+                </div>
+                <div class="poll__picture_container_item">
+                    <div class="poll__picture_container_item_percent">+10%</div>
+                    <div class="poll__picture_container_item_poll_5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="percentage">
+    <div class="percentage__container">
+        <div class="percentage__warhouse">
+            <img class="percentage__warhouse_house" src="./icons/house.svg" alt="warhouse">
+            <img class="percentage__warhouse_coins" src="./icons/coins.svg" alt="coins">
+        </div>
+        <div class="percentage__inner">
+            <div class="percentage__slogan">
+                10-12%
+            </div>
+            <div class="percentage__description">
+                Составляет средняя доходность проекта,
+                что выше банковского процента по депозиту
+            </div>
+            <div class="percentage__send_request">
                 <button class="send_request">Подать заявку</button>
             </div>
         </div>
-    </section>
-</div>
-<div class="duration__container">
-    <div class="color_main">
-        <section class="duration">
+    </div>
+</section>
+<section class="duration">
+    <div class="duration__container">
+        <div class="duration__sub_contr">
             <div class="duration__header">
-                <div class="duration__text col-md-10">
-                    <div class="description">
-                        Проект рассчитан на 5 лет
+                <div class="duration__text">
+                    <div class="duration__slogan">
+                        Проект рассчитан на&nbsp;5&nbsp;лет
                     </div>
-                    <div class="description_subheader">
+                    <div class="duration__description">
                         Если инвесторами не будет принято другое решение, через 5 лет объект выставляется на продажу
                     </div>
                 </div>
-                <div class="duration__picture_container col-md-2">
-                    <img src="./img/cash.png" alt="">
+                <div class="duration__picture_container">
+                    <img src="./icons/cash.svg" alt="cash">
                 </div>
             </div>
-            <div class="duration__footer">
-                <div class="duration__text col-md-5">
-                    <div class="description">
-                        10-20%
+            <div class="duration__mobile_description">
+                Если инвесторами не будет принято другое решение, через 5 лет объект выставляется на продажу
+            </div>
+            <div class="duration__inner">
+                <div class="duration__appendix">
+                    <div class="duration__appendix_income">
+                        <img src="./icons/arrow_up.svg" alt="arrow_up">
+                        <div class="duration__appendix_slogan">
+                            10-20%
+                        </div>
                     </div>
-                    <div class="description_subheader">
+                    <div class="duration__appendix_description">
                         Средняя доходность перепродажи объекта
                     </div>
                 </div>
-                <div class="more col-md-6 offset-md-1">
+                <div class="breaker"></div>
+                <div class="duration__footer">
                     Если вам срочно потребуются деньги, то вы сможете продать свою долю или ее часть и мы вам в этом
                     поможем
                 </div>
             </div>
-        </section>
+        </div>
     </div>
-</div>
-<div class="container">
-    <section class="help">
-        <div class="help__container">
-            <div class="help__text col-md-6">
-                <div class="description">
-                    Мы помогаем людям зарабатывать
-                    на том, в чем хорошо разбираемся
-                </div>
-                <div class="description_subheader">
-                    Начните вкадывать в свое будущее прямо сейчас!
-                </div>
-                <button class="intro__send_request">Подать заявку</button>
+    </div>
+</section>
+<section class="request">
+    <div class="request__container">
+        <div class="request__text">
+            <div class="request__slogan">
+                Мы помогаем людям зарабатывать
+                на том, в чем хорошо разбираемся
             </div>
-            <div class="help__coins col-md-4 offset-md-2">
-                <img src="./img/3-coins.png" alt="">
+            <div class="request__description">
+                Начните вкадывать в свое будущее прямо сейчас!
+            </div>
+            <div class="request__send_request">
+                <button class="send_request">Подать заявку</button>
             </div>
         </div>
-    </section>
-</div>
-<section class="security">
-    <div class="container">
-        <div class="security__upper">
+        <div class="request__coins">
+            <img src="./icons/presentation_coin_3.svg" alt="" class="coin_1">
+            <img src="./icons/presentation_coin_1.svg" alt="" class="coin_2">
+            <img src="./icons/presentation_coin_2.svg" alt="" class="coin_3">
+        </div>
+    </div>
+</section>
+<section class="warranty">
+    <div class="warranty__container">
+        <div class="warranty__upper">
             Ваши гарантии
         </div>
-        <div class="description color_white mt11">
+        <div class="warranty__slogan">
             Вы полностью защищены
             при инвестиовании с ICS Business
         </div>
-        <div class="security__container">
-            <div class="security__left col-md-6">
-                <div class="security__item">
-                    <img src="./img/shield.webp" alt="">
-                    <div class="security__item_description">
-                        Страхование
-                    </div>
-                </div>
-                <div class="security__item">
-                    <img src="./img/lince.webp" alt="">
-                    <div class="security__item_description">
-                        Полный контроль
-                    </div>
+        <div class="warranty__icons_container">
+            <div class="warranty__item">
+                <img src="./icons/strahovahie.svg" alt="insurance">
+                <div class="warranty__item_description">
+                    Страхование
                 </div>
             </div>
-            <div class="security__right col-md-6">
-                <div class="security__item">
-                    <img style="" src="./img/like.webp" alt="">
-                    <div class="security__item_description">
-                        Низкие риски
-                    </div>
+            <div class="warranty__item">
+                <img src="./icons/control.svg" alt="managment">
+                <div class="warranty__item_description">
+                    Полный контроль
                 </div>
-                <div class="security__item">
-                    <img src="./img/gear.webp" alt="">
-                    <div class="security__item_description">
-                        Независимость инвестиций
-                    </div>
+            </div>
+            <div class="warranty__item">
+                <img style="" src="./icons/lowrisk.svg" alt="low+risk">
+                <div class="warranty__item_description">
+                    Низкие риски
+                </div>
+            </div>
+            <div class="warranty__item">
+                <img src="./icons/nezavis.svg" alt="independant">
+                <div class="warranty__item_description">
+                    Независимость инвестиций
                 </div>
             </div>
         </div>
-        <div class="more mt93"><a href="#" class="how__more_link color_white">Подробнее о безопасности ≥</a></div>
+        <div class="warranty__more"><a href="#" class="warranty__more_link">Подробнее о безопасности ≥</a></div>
     </div>
 </section>
-<div class="container">
-    <section class="pride">
-        <div class="upper">Наша гордость</div>
-        <div class="description mt11">Познакомьтесь с нашими объектами</div>
-        <div class="con mt41">
-            <div class="pride__container">
+<section id="pride" class="pride">
+    <div class="pride__container">
+        <div class="pride__upper">Наша гордость</div>
+        <div class="pride__slogan">Познакомьтесь с нашими объектами</div>
+        <div class="pride__slider">
+            <div class="pride__item_container">
                 <div class="pride__item">
-                    <img src="./img/redAndWhite.webp" alt="slide">
-                    <div class="pride__title">Магазин «Красное и Белое»</div>
-                    <div class="pride__address">Москва, ул. Красная, 78</div>
-                    <div class="pride__percent">18.6%</div>
-                    <div class="pride__percent_sub_description">Доходность</div>
-                    <div class="pride__description">Прекрасный супермаркет в центре столицы, который принимает до 500
-                        тысяч
-                        посетителей в день – невероятно удачное расположение!
+                    <img class="pride__item_image" src="./images/red_and_white.webp" alt="slide">
+                    <div class="pride__item_title">Магазин «Красное и Белое»</div>
+                    <div class="pride__item_address">Москва, ул. Красная, 78</div>
+                    <div class="pride__item_characteristics_container">
+                        <div class="pride__item_characteristics_container_percent_container">
+                            <div class="pride__item_characteristics_container_percent">18.6%</div>
+                            <div class="pride__item_characteristics_container_description">Доходность</div>
+                        </div>
+                        <div class="pride__item_characteristics_container_rating_container">
+                            <div class="pride__item_characteristics_container_percent">A1</div>
+                            <div class="pride__item_characteristics_container_description">Рейтинг</div>
+                        </div>
                     </div>
-                    <div class="more mt26"><a href="#" class="how__more_link">Подробнее о безопасности ≥</a>
+                    <div class="pride__item_description">
+                        Прекрасный супермаркет в центре столицы,
+                        который принимает до 500 тысяч посетителей в день
+                        – невероятно удачное расположение!
+                    </div>
+                    <div class="pride__item_more"><a href="#" class="how__more_link">Подробнее об объекте ></a>
                     </div>
                 </div>
                 <div class="pride__item">
-                    <img src="./img/funnyPrices.webp" alt="slide">
-                    <div class="pride__title">Магазин «Смешные цены»</div>
-                    <div class="pride__address">Москва, ул. Белая, 87</div>
-                    <div class="pride__percent">20.2%</div>
-                    <div class="pride__percent_sub_description">Доходность</div>
-                    <div class="pride__description">Прекрасный супермаркет в центре столицы, который принимает до 500
-                        тысяч посетителей в день – невероятно удачное расположение!
+                    <img class="pride__item_image" src="./images/funny_prices.webp" alt="slide">
+                    <div class="pride__item_title">Магазин «Смешные цены»</div>
+                    <div class="pride__item_address">Москва, ул. Синяя, 6</div>
+                    <div class="pride__item_characteristics_container">
+                        <div class="pride__item_characteristics_container_percent_container">
+                            <div class="pride__item_characteristics_container_percent">20.2%</div>
+                            <div class="pride__item_characteristics_container_description">Доходность</div>
+                        </div>
+                        <div class="pride__item_characteristics_container_rating_container">
+                            <div class="pride__item_characteristics_container_percent">A1</div>
+                            <div class="pride__item_characteristics_container_description">Рейтинг</div>
+                        </div>
                     </div>
-                    <div class="more mt26"><a href="#" class="how__more_link">Подробнее о безопасности ≥</a>
+                    <div class="pride__item_description">
+                        Прекрасный супермаркет в центре столицы, который принимает до
+                        500 тысяч посетителей в день – невероятно удачное расположение!
+                    </div>
+                    <div class="pride__item_more"><a href="#" class="how__more_link">Подробнее об объекте ></a>
                     </div>
                 </div>
                 <div class="pride__item">
-                    <div class="pride__item_container">
-                        <img src="./img/pyatero4ka.webp" alt="slide">
-                        <div class="pride__title">Магазин «Пятерочка»</div>
-                        <div class="pride__address">Москва, ул. Синяя, 6</div>
-                        <div class="pride__percent">15.1%</div>
-                        <div class="pride__percent_sub_description">Доходность</div>
-                        <div class="pride__description">Прекрасный супермаркет в центре столицы, который принимает до
-                            500
-                            тысяч посетителей в день – невероятно удачное расположение!
+                    <div class="pride__item_image">
+                        <img class="pride__item_image" src="./images/pyatorochka.webp" alt="slide">
+                    </div>
+                    <div class="pride__item_title">Магазин «Пятерочка»</div>
+                    <div class="pride__item_address">Москва, ул. Белая, 78</div>
+                    <div class="pride__item_characteristics_container">
+                        <div class="pride__item_characteristics_container_percent_container">
+                            <div class="pride__item_characteristics_container_percent">15.1%</div>
+                            <div class="pride__item_characteristics_container_description">Доходность</div>
                         </div>
-                        <div class="more mt26"><a href="#" class="how__more_link">Подробнее о безопасности ≥</a>
+                        <div class="pride__item_characteristics_container_rating_container">
+                            <div class="pride__item_characteristics_container_percent">A1</div>
+                            <div class="pride__item_characteristics_container_description">Рейтинг</div>
                         </div>
+                    </div>
+                    <div class="pride__item_description">
+                        Прекрасный супермаркет в центре столицы,
+                        который принимает до 500 тысяч посетителей в день
+                        – невероятно удачное расположение!
+                    </div>
+                    <div class="pride__item_more"><a href="#" class="how__more_link">Подробнее об объекте ></a>
                     </div>
                 </div>
             </div>
-            <button type="button" class="prev"><img src="./icons/arrow_left.svg"></button>
-            <button type="button" class="next"><img src="./icons/arrow_right.svg"></button>
+            <button type="button" class="prev">
+                <img src="./icons/arrow_left.svg">
+            </button>
+            <button type="button" class="next">
+                <img src="./icons/arrow_right.svg">
+            </button>
         </div>
-        <button class="intro__send_request mt74 center">Получить консультацию</button>
+        <div class="pride__send_request">
+            <button class="send_request">Подать заявку</button>
+        </div>
+    </div>
+    <div class="pride__line"></div>
+</section>
+<section class="why">
+    <div class="why__container">
+        <div class="why__upper">
+            Почему мы?
+        </div>
+        <div class="why__slogan">
+            Почему стоит выбрать ICS Business?
+        </div>
+        <div class="why__description">
+            Наша миссия в том, чтобы люди богатели. Чем богаче люди, которые обращаются к нам, тем успешнее
+            мы – все просто, без лишней воды.
+        </div>
+    </div>
+    <div class="why__table_container">
+        <div class="top__blank"></div>
+        <div class="top__stocks">Акции</div>
+        <div class="top__us">Мы</div>
+        <div class="top__deposits">Вклады</div>
         <div class="line"></div>
-    </section>
-</div>
-<div class="container">
-    <section class="why">
-        <div class="why__container">
-            <div class="why__text col-md-5">
-                <div class="why__upper">
-                    Почему мы?
-                </div>
-                <div class="description">
-                    Почему стоит выбрать ICS Business?
-                </div>
-                <div class="description_subheader">
-                    Наша миссия в том, чтобы люди богатели. Чем богаче люди, которые обращаются к нам, тем успешнее мы –
-                    все просто, без лишней воды.
-                </div>
-                <div class="why__table"><img src="./img/table.webp" alt=""></div>
+        <div class="left__high_income">Высокая доходность</div>
+        <div class="cross"><img src="./icons/cross.svg" alt=""></div>
+        <div class="check"><img src="./icons/check.svg" alt=""></div>
+        <div class="cross"><img src="./icons/cross.svg" alt=""></div>
+        <div class="line"></div>
+        <div class="left__passive_income">Пассивный доход</div>
+        <div class="check"><img src="./icons/check.svg" alt=""></div>
+        <div class="check"><img src="./icons/check.svg" alt=""></div>
+        <div class="cross"><img src="./icons/cross.svg" alt=""></div>
+        <div class="line"></div>
+        <div class="left__tax">Налоговое преимущество</div>
+        <div class="cross"><img src="./icons/cross.svg" alt=""></div>
+        <div class="check"><img src="./icons/check.svg" alt=""></div>
+        <div class="cross"><img src="./icons/cross.svg" alt=""></div>
+        <div class="line"></div>
+        <div class="left__index">Индексация доходов</div>
+        <div class="dash"></div>
+        <div class="check"><img src="./icons/check.svg" alt=""></div>
+        <div class="cross"><img src="./icons/cross.svg" alt=""></div>
+        <div class="line"></div>
+    </div>
+    <div class="why__container_footer">
+        <div class="why__professional"><img src="./images/professional.webp" alt="professional"></div>
+        <div class="why__boarder">
+            <div class="why__boarder_description">
+                Есть вопросы?<br/>
+                Мы с радостью вас проконсультируем!
             </div>
-            <div class="why__picture_container col-md-6  offset-md-1">
-                <div class="why__chelik"><img src="./img/chelik.webp" alt=""></div>
-                <div class="why__boarder">
-                <div class="description_subheader rt">
-                    Есть вопросы?
-                    Мы с радостью вас проконсультируем!
-                </div>
-                <button class="intro__send_request mt31 rt">Получить консультацию</button>
-                </div>
+            <div class="why__send_request">
+                <button class="send_request">Получить консультацию</button>
             </div>
         </div>
-    </section>
-    <section class="bullets">
-        <div class="bullets__container">
-            <div class="bullets__item col-md-4">
-                <div class="bullets__item_pic"><img src="./img/experts.webp" alt=""></div>
-                <div class="description mt18">
+    </div>
+</section>
+<section class="bullets">
+    <div class="bullets__container">
+        <div class="bullets__item">
+            <div class="bullets__item_picture_container">
+                <div class="bullets__item_picture_container_background"></div>
+                <div class="bullets__item_picture_container_chart">
+                    <img src="./icons/bullets_chart.svg" alt="">
+                </div>
+                <div class="bullets__item_picture_container_handshake">
+                    <img src="./icons/bullets_handshake.svg" alt="">
+                </div>
+                <div class="bullets__item_picture_container_coins">
+                    <img src="./icons/bullets_coins.svg" alt="">
+                </div>
+            </div>
+            <div class="bullets__text">
+                <div class="bullets__slogan">
                     Опытные специалисты
                 </div>
-                <div class="description_subheader mt9">
+                <div class="bullets__description">
                     Работаем в области управления коммерческой недвижимостью
                     более 10 лет, имеем большой опыт
                     и знаем все до мелочей
                 </div>
             </div>
-            <div class="bullets__item col-md-4">
-                <div class="bullets__item_pic"><img src="./img/face2face.webp" alt=""></div>
-                <div class="description mt18">
+        </div>
+        <div class="bullets__item">
+            <div class="bullets__item_picture_container">
+                <div class="bullets__item_picture_container_background"></div>
+                <div class="bullets__item_picture_container_discussion">
+                    <img src="./icons/bullets_discussion.svg" alt="">
+                </div>
+                <div class="bullets__item_picture_container_graphic">
+                    <img src="./icons/bullets_graphic.svg" alt="">
+                </div>
+            </div>
+            <div class="bullets__text">
+                <div class="bullets__slogan">
                     Индивидуальный подход
                 </div>
-                <div class="description_subheader mt9">
+                <div class="bullets__description">
                     Разрабатываем индивидуальные
                     схемы вложения денежных средств
                     в недвижимость учитывая возможности
                     и желания каждого
                 </div>
             </div>
-            <div class="bullets__item col-md-4">
-                <div class="bullets__item_pic"><img src="./img/puzzle.webp" alt=""></div>
-                <div class="description mt18">
+        </div>
+        <div class="bullets__item">
+            <div class="bullets__item_picture_container">
+                <div class="bullets__item_picture_container_background"></div>
+                <div class="bullets__item_picture_container_big_gear">
+                    <img src="./icons/bullets_big_gear.svg" alt="">
+                </div>
+                <div class="bullets__item_picture_container_small_gear">
+                    <img src="./icons/bullets_small_gear.svg" alt="">
+                </div>
+                <div class="bullets__item_picture_container_puzzle">
+                    <img src="./icons/bullets_puzzle.svg" alt="">
+                </div>
+            </div>
+            <div class="bullets__text">
+                <div class="bullets__slogan">
                     Инвестирование под ключ
                 </div>
-                <div class="description_subheader mt9">
+                <div class="bullets__description">
                     Берем на себя все организационные вопросы, чтобы вы могли получать прибыль без отрыва от своей
                     работы и бизнеса
                 </div>
             </div>
         </div>
-        <div class="line mt110"></div>
-    </section>
-</div>
-<div class="container">
-    <section class="function">
-        <div class="description mt110">
-            Индивидуальный подход
+    </div>
+    <div class="bullets__line"></div>
+    </div>
+</section>
+<section class="function">
+    <div class="function__container">
+        <div class="function__slogan">
+            Какие функции
+            ICS Business
+            берет на себя?
         </div>
-        <div class="function__container">
-
-            <div class="function__item col-md-4">
-                <div class="function__item_number mt120">1</div>
-                <div class="description_subheader mt93">
-                    Поиск объекта и оценка
-                    его инвестиционной привлекательности
-                </div>
-                <div class="function__item_number mt120">4</div>
-                <div class="description_subheader mt93">
-                    Решение эксплуатационных вопросов с администрацией города, коммунальными службами и т.д.
+        <div class="function__item_container">
+            <div class="function__item">
+                <div class="function__item_number">1</div>
+                <div class="function__item_description">
+                    <div class="function__item_bold_description">Поиск объекта</div>
+                    и оценка его инвестиционной привлекательности
                 </div>
             </div>
-            <div class="function__item col-md-4">
-                <div class="function__item_number  mt120">2</div>
-                <div class="description_subheader mt93">
-                    Ведение коммуникаций
-                    с продавцом объекта
-                    от лица соинвесторов
-                </div>
-                <div class="function__item_number">5</div>
-                <div class="description_subheader mt93">
-                    Проверка юридических
-                    и прочих рисков
+            <div class="function__item">
+                <div class="function__item_number">2</div>
+                <div class="function__item_description">
+                    <div class="function__item_bold_description">Ведение коммуникаций</div>
+                    с продавцом объекта от лица соинвесторов
                 </div>
             </div>
-            <div class="function__item col-md-4">
-                <div class="function__item_number mt120">3</div>
-                <div class="description_subheader mt93">
-                    Ведение операций
+            <div class="function__item">
+                <div class="function__item_number">3</div>
+                <div class="function__item_description">
+                    <div class="function__item_bold_description">Ведение операций</div>
                     с арендаторами от лица владельцев объекта
                 </div>
-                <div class="function__item_number mt120">6</div>
-                <div class="description_subheader mt93">
-                    Полное ведение бухгалтерского учета
+            </div>
+            <div class="function__item">
+                <div class="function__item_number">4</div>
+                <div class="function__item_description">
+                    <div class="function__item_bold_description">Решение эксплутационных вопросов</div>
+                    с администрацией города, коммунальными службами и т.д.
+                </div>
+            </div>
+            <div class="function__item">
+                <div class="function__item_number">5</div>
+                <div class="function__item_description">
+                    <div class="function__item_bold_description">Проверка</div>
+                    юридических и прочих рисков
+                </div>
+            </div>
+            <div class="function__item">
+                <div class="function__item_number">6</div>
+                <div class="function__item_description">
+                    <div class="function__item_bold_description">Полное ведение</div>
+                    бухгалтерского учета
                 </div>
             </div>
         </div>
-
-    </section>
-</div>
-<div class="color_main">
-    <div class="container">
-        <section class="start">
-            <div class="start__container">
-                <div class="start__text col-md-5">
-                    <div class="description">
-                        Начните получать прибыль
-                        от недвижимости
-                    </div>
-                    <div class="description_subheader">
-                        Оставьте свои контактные данные и наши
-                        специалисты свяжутся с вами
-                    </div>
-                    <button class="intro__send_request">Подать заявку</button>
+    </div>
+</section>
+<section class="presentation">
+    <div class="presentation__container">
+        <div class="presentation__download">
+            <div class="presentation__download_description">Подробнее о нас вы можете узнать
+                из нашей презентации
+            </div>
+            <button class="download_request">Скачать презентацию</button>
+        </div>
+        <div class="presentation__slogan">
+            Начните получать прибыль от недвижимости
+        </div>
+        <div class="presentation__inner">
+            <div class="presentation__left">
+                <div class="presentation__description">
+                    Оставьте свои контактные данные и наши специалисты свяжутся с вами
                 </div>
-                <div class="start__office col-md-6  offset-md-1">
-                    <img src="./img/ending.webp" alt="">
+                <div class="presentation__send_request">
+                    <button class="send_request">Подать заявку</button>
                 </div>
             </div>
-        </section>
-        <footer class="footer">
-            <div class="menu_container">
-                <a href="#" class="footer__logo  col-md-3">
-                    <div class="footer__text">
-                        2010-2020
+            <div class="presentation__picture_container">
+                <div class="presentation__office">
+                    <img src="./icons/presentation_office.svg" alt="office">
+                    <div class="presentation__coin_1">
+                        <img src="./icons/presentation_coin_1.svg" alt="coin">
                     </div>
-                    <div class="footer__description">
-                        Правовая информация
+                    <div class="presentation__coin_2">
+                        <img src="./icons/presentation_coin_2.svg" alt="coin">
                     </div>
-                </a>
-                <nav class="col-md-6">
-                    <ul class="header__menu">
-                        <li class="menu_item"><a href="#" class="menu_link">О компании</a></li>
-                        <li class="menu_item"><a href="#require" class="menu_link">Клиента</a></li>
-                        <li class="menu_item"><a href="#require" class="menu_link">Наши объекты</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="footer__contacts col-md-2  offset-md-1">
-                    <a href="tel:+74999228974" class="footer__phone">+7 (499) 922-89-74</a>
-                    <div class="footer__phone_description">
-                        info@icsbusiness.ru
+                    <div class="presentation__coin_3">
+                        <img src="./icons/presentation_coin_3.svg" alt="coin">
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
+    <div class="presentation__boarder"></div>
+</section>
+<footer>
+    <div id="footer" class="footer__container">
+        <div class="footer__years">2010-2020</div>
+        <div class="footer__phone">
+            <a href="tel:+79268317209">+7 (926) 831-72-09</a>
+        </div>
+        <div class="footer__info">
+            <a href="#">Правовая информация</a>
+        </div>
+        <div class="footer__mail">info@icsbusiness.ru</div>
+    </div>
+</footer>
+<div class="overlay">
+    <div class="modal" id="consultation">
+        <div class="consultation__container">
+            <div class="modal__close">
+            </div>
+            <div class="consultation__line"></div>
+            <h2 class="consultation__title">
+                Заявка
+            </h2>
+            <div class="consultation__descr">
+                Оставьте свои контактные данные и мы свяжемся с вами в рабочее время
+            </div>
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" class="consultation__name" required placeholder="Имя" type="text">
+                <input name="phone" class="consultation__phone" required placeholder="Телефон">
+                <button class="button button_submit">Подать заявку</button>
+            </form>
+            <div class="consultation__footer">Нажимая на кнопку «Подать заявку» вы даете согласие на хранение и
+                обработку
+                персональных данных
+            </div>
+        </div>
 
+        <div class="modal" id="done">
+            <div class="consultation__container">
+                <div class="modal__close">
+                </div>
+                <div class="consultation__line"></div>
+                <h2 class="consultation__title">
+                    Заявка
+                </h2>
+                <div class="check">
+                    <img src="icons/check.svg" alt="check">
+                </div>
+                <div class="done__descr">
+                    Спасибо!
+                    Ваша заявка успешно отправлена!
+                    <br>
+                    Мы свяжемся с вами в рабочее время с 10 до 19 часов.
+                </div>
+                <div class="to_top">Перейти на главную</div>
+            </div>
+        </div>
     </div>
 </div>
+<a href="#up" class="pageup">
+    <img src="icons/up.svg" alt="up">
+</a>
 </body>
 </html>

@@ -1,52 +1,138 @@
 .percentage {
-  margin-top: 60px;
+  margin-top: 40px;
+  min-height: 453px;
+  @media(min-width: 768px) {
+    min-height: unset;
+  }
 
   &__container {
+    min-height: 413px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    align-content: center;
-    min-height: 202px;
+    flex-direction: column;
     border-radius: 5px;
-    border: 2px dashed #0e5ea1;
+    border: 2px dashed $second-color;
+    @media(min-width: 768px) {
+      flex-direction: row;
+      min-height: 287px;
+      justify-content: space-between;
+      align-items: unset;
+    }
   }
-  &__text{
-    //margin-top: 47px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media(min-width: 768px) {
+      align-items: start;
+    }
+  }
+
+  &__warhouse {
+    margin-top: 30px;
+    min-height: 118px;
+    position: relative;
+    @media(min-width: 768px) {
+      margin-top: 61px;
+      margin-left: 31px;
+      min-width: 254px;
+      min-height: 150px;
+    }
+
+    &_house {
+      position: absolute;
+      transform: translateX(-50%);
+      z-index: -10;
+      @media(min-width: 320px) {
+        width: 173px;
+        height: 109px;
+      }
+
+      @media(min-width: 768px) {
+        width: 220px;
+        height: 138px;
+        transform: unset;
+      }
+      @media(min-width: 1200px) {
+        width: 177px;
+        height: 111px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
+    &_coins {
+      position: absolute;
+      transform: translateX(-50%);
+      top: 58px;
+      left: 77px;
+      z-index: 10;
+      @media(min-width: 320px) {
+        width: 72px;
+        height: 60px;
+
+      }
+
+      @media(min-width: 768px) {
+        width: 92px;
+        height: 77px;
+        transform: unset;
+        top: 73px;
+        left: 162px;
+      }
+      @media(min-width: 1200px) {
+        width: 74px;
+        height: 62px;
+        top: 59px;
+        left: 130px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__slogan {
+    margin-top: 32px;
+    font-size: 60px;
+    line-height: 35px;
+    @media(min-width: 768px) {
+      margin-top: 45px;
+      margin-left: 36px;
+    }
   }
 
   &__description {
-    font-weight: 700;
-    font-size: 30px;
-    //line-height: 40px;
-
-    color: #181717;
-    line-height: 35px;
-
-    &_subheader {
-      margin-top: 17px;
-
-      color: #181717;
+    margin-top: 17px;
+    margin-left: 20px;
+    @media(min-width: 768px) {
+      margin-top: 21px;
+      margin-left: 36px;
+      margin-right: 39px;
       font-size: 16px;
-      font-weight: 400;
       line-height: 25px;
     }
   }
 
-  &__office {
-    max-width: 100%;
-  }
+  &__send_request {
+    margin: 23px 20px 0;
+    min-width: 240px;
 
-  &__send_request button{
-    margin-top: 41px;
-    width: 270px;
-    height: 60px;
-    border-radius: 5px;
-    background-color: $second-color;
-    color: #ffffff;
-    font-family: "Avenir", serif;
-    font-size: 11px;
-    letter-spacing: 2px;
-    line-height: 25px;
-    text-transform: uppercase;
+    @media (min-width: 321px) {
+      width: 90%;
+    }
+
+    @media(min-width: 768px) {
+      margin: 23px 49px 41px 36px;
+      min-width: 340px;
+      width: unset;
+    }
   }
 }
