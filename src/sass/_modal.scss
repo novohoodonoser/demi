@@ -1,0 +1,166 @@
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(14, 94, 161, .9);
+}
+.modal{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 463px;
+  height: 520px;
+  background-color: #fff;
+  &__close {
+    cursor: pointer;
+    width: 16px;
+    height: 17px;
+    opacity: 0.3;
+    position: absolute;
+    right: 19px;
+    top: 22px;
+    color: $second-color;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:before, &:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 18px;
+      width: 2px;
+      background-color: $second-color;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+.consultation {
+
+  &__container {
+    margin: 0 60px;
+  }
+
+
+
+  &__title {
+    font-family: "Avenir Bold", serif;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 21px;
+
+  }
+
+  &__descr {
+    margin-top: 6px;
+    font-family: "Avenir", serif;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__line {
+    margin-top: 60px;
+    width: 463px;
+    height: 1px;
+    border-radius: 6px;
+    background-color: #eaebf2;
+    margin-left: -60px;
+  }
+
+  &__name, &__phone {
+    margin-top: 22px;
+    display: block;
+    width: 342px;
+    height: 62px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+  }
+
+  &__phone {
+    margin-top: 18px;
+  }
+
+  &__footer {
+    margin-top: 26px;
+    opacity: 0.4;
+    font-family: "Avenir", serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+}
+
+
+.button_submit {
+  margin-top: 29px;
+  display: block;
+  width: 340px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: $second-color;
+  color: #ffffff;
+  font-family: "Avenir", serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+input {
+  text-indent: 20px;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+label.error {
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.check{
+  margin-top: 20px;
+  width: 32px;
+  height: 27px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.done{
+  &__descr {
+    margin-top: 9px;
+    font-family: "Avenir", serif;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+.to_top{
+  color: $second-color;
+  font-family: "Avenir", serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: 342px;
+  height: 62px;
+  border-radius: 5px;
+  border: 1px solid $second-color;
+}
+
+#consultation, #done{
+  display: none;
+}

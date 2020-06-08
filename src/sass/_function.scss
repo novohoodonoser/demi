@@ -1,0 +1,125 @@
+.function {
+  margin-top: 24px;
+  margin-bottom: 42px;
+  @media(min-width: 768px) {
+    margin-top: 38px;
+    margin-bottom: 56px;
+  }
+  @media(min-width: 1200px) {
+    margin-top: 94px;
+  }
+
+  &__item {
+    position: relative;
+    min-height: 103px;
+    padding-top: 7px;
+    @media(min-width: 768px) {
+      flex: 50%;
+    }
+    @media(min-width: 1200px) {
+      flex: 33%;
+    }
+
+    &:nth-child(3) {
+      content: ' ';
+      margin-top: 17px;
+      @media(min-width: 1200px) {
+        margin-top: 0;
+      }
+    }
+
+    &:nth-child(4) {
+      content: ' ';
+      margin-top: 23px;
+      @media(min-width: 1200px) {
+        margin-top: 80px;
+      }
+    }
+
+    &:nth-child(5) {
+      content: ' ';
+      margin-top: 43px;
+      @media(min-width: 768px) {
+        margin-top: 53px;
+      }
+      @media(min-width: 1200px) {
+        margin-top: 80px;
+      }
+    }
+
+    &:nth-child(6) {
+      content: ' ';
+      margin-top: 22px;
+      @media(min-width: 768px) {
+        margin-top: 53px;
+      }
+      @media(min-width: 1200px) {
+        margin-top: 80px;
+      }
+    }
+
+    &_container {
+      margin-top: 26px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      @media(min-width: 768px) {
+        flex-direction: row;
+      }
+    }
+
+    &_number {
+      min-height: 80px;
+      position: absolute;
+      z-index: -10;
+      color: rgba(182, 147, 108, 0.2);
+      font-size: 100px;
+      line-height: 25px;
+
+      &:nth-child(1) {
+        content: ' ';
+        top: 60px;
+      }
+
+      &:nth-child(2) {
+        content: ' ';
+        top: 60px;
+      }
+
+      &:nth-child(3) {
+        content: ' ';
+        top: 60px;
+      }
+
+      &:nth-child(4) {
+        content: ' ';
+        top: 70px;
+      }
+
+      &:nth-child(5) {
+        content: ' ';
+        top: 60px;
+      }
+
+      &:nth-child(6) {
+        content: ' ';
+        top: 40px;
+      }
+    }
+
+    &_description {
+      position: absolute;
+      left: 40px;
+      top: 0;
+      @media(min-width: 768px) {
+        left: 80px;
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+
+    &_bold_description {
+      font-family: "Avenir Bold", serif;
+    }
+  }
+}

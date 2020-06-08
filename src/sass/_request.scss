@@ -1,0 +1,77 @@
+.request {
+  min-height: 365px;
+  margin-top: 38px;
+  @media(min-width: 768px) {
+    margin-top: 54px;
+    min-height: 326px;
+  }
+
+  &__text{
+    @media(min-width: 768px) {
+      margin-right: 40px;
+    }
+  }
+  &__coins {
+    display: none;
+    @media(min-width: 768px) {
+      display: unset;
+      min-height: 211px;
+      min-width: 164px;
+      position: relative;
+    }
+  }
+
+  &__container {
+    @media(min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__slogan {
+    @media(min-width: 768px) {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+
+  &__description {
+    margin-right: 50px;
+    @media(min-width: 768px) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+  }
+
+  &__send_request {
+    margin-top: 33px;
+    @media(min-width: 768px) {
+      margin-right: 201px;
+    }
+  }
+}
+
+.coin_1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 79px;
+  height: 102px;
+  transform: rotate(15deg);
+}
+
+.coin_2 {
+  position: absolute;
+  right: 106px;
+  top: 71px;
+  width: 66px;
+  height: 68px;
+}
+
+.coin_3 {
+  position: absolute;
+  right: 19px;
+  top: 126px;
+  width: 117px;
+  height: 117px;
+}

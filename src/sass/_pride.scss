@@ -1,0 +1,132 @@
+.pride {
+
+  &__upper {
+    margin-top: 34px;
+    @media(min-width: 768px) {
+      margin-top: 48px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__send_request {
+    margin-top: 36px;
+    @media(min-width: 768px) {
+      margin-top: 52px;
+    }
+  }
+
+  &__item {
+
+    &_container {
+      margin: 31px 20px 0;
+    }
+
+    &_image {
+      border-radius: 5px;
+      @media(min-width: 320px) {
+        width: 240px;
+        height: 160px;
+        //margin-left: 20px;
+      }
+      @media(min-width: 768px) {
+        width: 280px;
+        height: 187px;
+      }
+    }
+
+    &_title {
+      margin-top: 22px;
+      font-family: "Avenir Bold", serif;
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    &_address {
+      margin-top: 6px;
+      font-family: "Avenir", serif;
+      font-size: 16px;
+      line-height: 25px;
+
+    }
+
+    &_characteristics_container {
+      margin: 24px 20px 0 0;
+      display: flex;
+      justify-content: flex-start;
+      @media(min-width: 768px) {
+        margin-top: 34px;
+      }
+
+      &_percent_container {
+        flex:50%;
+      }
+
+      &_rating_container {
+        flex:50%;
+      }
+
+      &_percent {
+        font-family: "Avenir Bold", serif;
+        font-size: 16px;
+        line-height: 25px;
+        @media(min-width: 768px) {
+          font-size: 18px;
+        }
+      }
+
+      &_description {
+        margin-top: 1px;
+        font-family: "Avenir", serif;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+
+    &_description {
+      margin-top: 25px;
+      font-family: "Avenir", serif;
+      font-size: 13px;
+      line-height: 25px;
+      @media(min-width: 320px) {
+        width: 90%;
+      }
+    }
+
+    &_more {
+      margin-top: 25px;
+    }
+  }
+
+  &__line {
+    margin-top: 40px;
+    @media(min-width: 768px) {
+      margin-top: 50px;
+    }
+  }
+}
+
+.prev, .next {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  left: -11px;
+  border: none;
+  border-radius: 5px;
+  background-color: $second-color;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.next {
+  right: -11px;
+  left: auto;
+}
+
+

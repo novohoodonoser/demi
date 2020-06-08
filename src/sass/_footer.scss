@@ -1,0 +1,48 @@
+.footer {
+  &__container {
+    margin-top: 22px;
+    min-height: 99px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media(min-width: 768px) {
+      margin-top: 33px;
+      min-height: 109px;
+    }
+  }
+
+  &__years {
+    flex: 50%;
+    font-family: "Avenir", serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  &__phone {
+    flex: 50%;
+    font-family: "Avenir Bold", serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #181717;
+    text-decoration: none;
+    text-align: end;
+  }
+
+  &__info {
+    flex: 50%;
+    color: $second-color;
+    font-family: "Avenir", serif;
+    font-size: 12px;
+    line-height: 25px;
+    text-decoration: underline;
+  }
+
+  &__mail {
+    flex: 50%;
+    font-family: "Avenir", serif;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: end;
+  }
+}

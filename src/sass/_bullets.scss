@@ -1,0 +1,256 @@
+.bullets {
+  margin-top: 15px;
+
+  &__container {
+    @media(min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 150px;
+    }
+  }
+
+  &__slogan {
+    margin-top: 6px;
+    @media(min-width: 768px) {
+      font-size: 25px;
+      line-height: 35px;
+    }
+    @media(min-width: 1200px) {
+      margin-top: 33px;
+    }
+  }
+
+  &__text {
+    @media(min-width: 768px) {
+      flex: 50%;
+      margin-left: 31px;
+    }
+    @media(min-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+
+  &__item {
+    margin-top: 25px;
+    display: flex;
+    @media(min-width: 320px) {
+      margin-top: 48px;
+      flex-direction: column;
+    }
+    @media(min-width: 768px) {
+      margin-top: 48px;
+      flex-direction: row;
+    }
+    @media(min-width: 1200px) {
+      flex-direction: column;
+      flex-basis: 33%;
+    }
+
+    &_picture_container {
+      display: flex;
+      position: relative;
+      min-height: 140px;
+      @media(min-width: 768px) {
+        flex: 50%;
+      }
+      @media(min-width: 1200px) {
+        flex: unset;
+      }
+
+      &_background {
+        min-width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        background-color: $main-color;
+        position: absolute;
+        z-index: -10;
+        bottom: 12px;
+        @media(min-width: 768px) {
+          height: 122px;
+          top: 46px;
+          bottom: 0;
+        }
+        @media(min-width: 1200px) {
+          width: 370px;
+          height: 133px;
+          //top: 50px;
+          min-width: unset;
+          bottom: 0;
+          top:0;
+        }
+
+      }
+
+      &_chart {
+        position: absolute;
+        top: 0;
+        left: 12px;
+        @media(min-width: 768px) {
+          left: 14px;
+        }
+        @media(min-width: 1200px) {
+          width: 118px;
+          height: 140px;
+          left: 15px;
+          top: -50px;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &_handshake {
+        position: absolute;
+        top: 36px;
+        right: 77px;
+        @media(min-width: 768px) {
+          top: 43px;
+          right: 93px;
+        }
+        @media(min-width: 1200px) {
+          top: -3px;
+          right: 101px;
+          width: 117px;
+          height: 151px;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &_coins {
+        position: absolute;
+        right: 14px;
+        top: 118px;
+        @media(min-width: 768px) {
+          top: 142px;
+          right: 17px;
+        }
+        @media(min-width: 1200px) {
+          top: 97px;
+          right: 18px;
+          width: 64px;
+          height: 51px;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &_discussion {
+        position: absolute;
+        top: 27px;
+        left: 46px;
+
+        @media(min-width: 768px) {
+          top: 32px;
+          left: 55px;
+        }
+        @media(min-width: 1200px) {
+          top: -17px;
+          left: 60px;
+          width: 147px;
+          height: 163px;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &_graphic {
+        position: absolute;
+        top: 0;
+        right: 40px;
+        @media(min-width: 768px) {
+          right: 48px;
+        }
+        @media(min-width: 1200px) {
+          top: -52px;
+          right: 52px;
+          width: 74px;
+          height: 136px;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+        }
+
+      }
+
+      &_big_gear {
+        position: absolute;
+        z-index: 10;
+        left: 29px;
+        top: 67px;
+        @media(min-width: 768px) {
+          left: 35px;
+          top: 81px;
+        }
+        @media(min-width: 1200px) {
+          left: 38px;
+          top: 38px;
+          width: 68px;
+          height: 67px;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &_small_gear {
+        position: absolute;
+        z-index: 20;
+        left: 71px;
+        top: 69px;
+        @media(min-width: 768px) {
+          left: 86px;
+          top: 83px;
+        }
+        @media(min-width: 1200px) {
+          top: 41px;
+          left: 93px;
+          width: 42px;
+          height: 41px;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &_puzzle {
+        position: absolute;
+        top: 0;
+        right: 31px;
+        @media(min-width: 768px) {
+          right: 37px;
+        }
+        @media(min-width: 1200px) {
+          top: -50px;
+          right: 41px;
+          width: 191px;
+          height: 198px;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &__line {
+    margin-top: 63px;
+    @media(min-width: 1200px) {
+      margin: 110px auto 0;
+      max-width: 1170px;
+    }
+  }
+
+}

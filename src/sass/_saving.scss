@@ -1,0 +1,148 @@
+.savings {
+  min-height: 664px;
+  @media(min-width: 1200px) {
+    min-height: 655px;
+  }
+
+  &__container {
+    @media(min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &__text {
+    @media(min-width: 1200px) {
+      flex: 5;
+    }
+  }
+
+  &__slogan {
+    margin-top: 15px;
+    @media(min-width: 768px) {
+      margin-top: 57px;
+      margin-right: 128px;
+    }
+  }
+
+  &__description {
+    @media(min-width: 768px) {
+      width: 463px;
+    }
+  }
+
+  &__warhouse {
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+    @media(min-width: 768px) {
+      margin-top: 50px;
+    }
+    @media(min-width: 1200px) {
+      margin-top: 98px;
+      flex: 6;
+      justify-content: flex-end;
+    }
+  }
+
+  &__inner {
+    height: 180px;
+    @media(min-width: 768px) {
+      height: 432px;
+    }
+
+
+  }
+
+  &__sklad_mobile {
+    position: relative;
+    overflow: hidden;
+    width: 280px;
+    height: 180px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media(min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__sklad_tablet {
+    position: relative;
+    overflow: hidden;
+
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media(min-width: 320px) {
+      display: none;
+    }
+    @media(min-width: 768px) {
+      display: block;
+    }
+    @media(min-width: 1200px) {
+      width: 570px;
+      height: 432px;
+      overflow: unset;
+    }
+  }
+
+  &__stock_arrow {
+    position: absolute;
+    @media(min-width: 320px) {
+      left: 0;
+      top: 15px;
+      width: 72px;
+      height: 46px;
+    }
+    @media(min-width: 768px) {
+      left: 65px;
+      top: 38px;
+      width: 163px;
+      height: 102px;
+    }
+    @media(min-width: 1200px) {
+      left: -47px;
+      top: 33px;
+      width: 203px;
+      height: 135px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__lightbulb {
+    position: absolute;
+    @media(min-width: 320px) {
+      top: 42px;
+      left: -5px;
+      width: 18px;
+      height: 33px;
+    }
+    @media(min-width: 768px) {
+      top: 100px;
+      left: 33px;
+      width: 59px;
+      height: 74px;
+    }
+    @media(min-width: 1200px) {
+      top: 115px;
+      left: -92px;
+      width: 74px;
+      height: 96px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
